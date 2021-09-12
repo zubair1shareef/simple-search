@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home__container {
+  width: 700px;
+  margin: 0 auto;
+}
+.home__logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.home__form {
+  position: relative;
+}
+.search__icon {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 20px;
+  color: #9aa0a6;
+}
+.microphone {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  font-size: 20px;
+  color: #4285f4;
+}
+.home__input {
+  width: 100%;
+  height: 50px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  outline: none;
+  font-size: 18px;
+  padding: 0 45px;
+}
+.home__group {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+.home__btn {
+  outline: none;
+  color: #5f6368;
+  background: #f2f2f2;
+  padding: 10px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+  width: 80%;
+  margin: 30px auto;
+  
+ 
 }
+.search__form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
+  align-items: center;
+  margin-left: 20%;
+ 
+}
+.search__form-logo {
+  width: 92px;
+  height: 30px;
+  cursor: pointer;
+  
+}
+.search__form-logo img {
+  width: 60px;
+  height: 50px;
+}
+.search__form-input {
+  width: 600px;
+  margin-left: 15px;
+}
+.show {
+  
+  margin: 20px auto;
+  width: 80%;
+  padding-bottom: 50px;
+  align-items: center !important;
+  
+}
+.show__info {
+  color: silver;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 50px !important;
+}
+.show__details {
+  margin-top: 25px;
+}
+.show__link {
+  margin-bottom: 5px;
+}
+.show__link a {
+  color: #3c4043;
+  text-decoration: none;
+}
+.show__title {
+  margin-bottom: 10px;
+}
+.show__title a {
+  font-size: 20px;
+  color: #1a0dab;
+  text-decoration: none;
+}
+.show__description {
+  color: #3c4043;
+  font-size: 14px;
+}
+.background{
+  position:absolute; z-index:1;
+  
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+padding: 14px 80px 18px 36px;
+cursor: pointer;
+}
+
+.card:hover{
+   transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card h3{
+font-weight: 600;
+}
+
+.card img{
+position: absolute;
+top: 20px;
+right: 15px;
+max-height: 120px;
+}
+
+.card-1{
+background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+    background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+.card-2{
+ background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+    background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+@media(max-width: 990px){
+  .card{
+    margin: 20px;
+    width:100%
+  }
+  .background{
+    position:absolute; z-index:1;
+    width: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .search__form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20px;
+    align-items: center;
+    margin-left: 0%;
+   
+  }
+} 
